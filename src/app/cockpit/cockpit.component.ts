@@ -4,7 +4,6 @@ import { Component, OnInit, EventEmitter, Output, ViewEncapsulation} from '@angu
   selector: 'app-cockpit',
   templateUrl: './cockpit.component.html',
   styleUrls: ['./cockpit.component.css'],
-  encapsulation: ViewEncapsulation.None,
 })
 export class CockpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
